@@ -1,0 +1,45 @@
+ body {
+      font-family: Arial, sans-serif;
+      background-color: #bbe8bc;
+      text-align: center;
+      padding: 40px;
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      transition: all 0.5s ease;
+    }
+
+    .botones {
+      margin-top: 20px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      background-color: #46804d;
+      color: rgb(243, 255, 247);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #3fab8e;
+    }
+
+    
+    .blancoNegro {
+      filter: grayscale(100%);
+    }
+
+    .desenfocar {
+      filter: blur(5px);
+    }
+
+    .zoomRotar {
+      transform: scale(1.5) rotate(40deg);
+    }
