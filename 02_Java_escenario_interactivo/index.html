@@ -7,14 +7,74 @@
   <link rel="stylesheet" href="./Style.css">
 </head>
 <body>
-  <div>
+  <!-- Escenario 1 -->
+  <h1 id="titulo">Aventura del Tiburón</h1>
+
+  <div id="escenario">
     <img src="./img/Fondo.jpg" alt="fondo" id="fnd">
-    <img src="./img/corazon.png" alt="corazon" id="crz">
-    <img src="./img/medusa.png" alt="medusa" id="medusa">
-    <img src="./img/corazon.png" alt="corazon" id="crz2">
-    <img src="./img/corazon.png" alt="corazon" id="crz3">
-    <img src="./img/piso.png" alt="piso" id="piso">
+
+    <!-- Animables -->
+    <img src="./img/medusa.png" alt="medusa" id="medusa" class="moverMedusa">
+    <img src="./img/gt0.png" alt="Gato" id="gat0" class="moverGat0">
+    <img src="./img/rana.png" alt="rana" id="rana" class="moverRana">
+
+    <!-- Clickeables -->
+    <img src="./img/corazon.png" alt="corazon" id="crz" class="cora">
+    <img src="./img/corazon.png" alt="corazon" id="crz2" class="cora">
+    <img src="./img/corazon.png" alt="corazon" id="crz3" class="cora">
+    <img src="./img/pezz1.PNG" alt="pezz" id="pezz1" class="pez">
+    <img src="./img/pezz1.PNG" alt="pezz" id="pezz2" class="pez">
+    <img src="./img/pezz1.PNG" alt="pezz" id="pezz3" class="pez">
+    <img src="./img/pezz1.PNG" alt="pezz" id="pezz4" class="pez">
+
+    <!-- Tiburon -->
+    <img src="./img/shark.png" alt="Tiburon" id="shark" class="chark">
+
+    <!-- Tablero -->
+    <div class="contador">
+      <div class="item-contador">
+        <img src="./img/corazon.png" class="icono" alt="icono corazón">
+        <span id="countCorazon">0</span>
+      </div>
+      <div class="item-contador">
+        <img src="./img/pezz1.PNG" class="icono" alt="icono pez">
+        <span id="countPez">0</span>
+      </div>
+    </div>
   </div>
+
+  <!-- Escenario 2 -->
+   <h1 id="titulo">Aventura del gato-alien</h1>
+
+  <div id="escenario">
+    <img src="./img 2/Fondo cielo .jpg" alt="fondo" id="fnd">
+
+    <!-- Animables -->
+    <img src="./img 2/nube.png" alt="Nube" id="nube1" class="nube">
+    <img src="./img 2/nube.png" alt="Nube" id="nube2" class="nube">
+
+    <!-- Clickeables -->
+    <img src="./img 2/vaca.png" alt="Vaca" id="vaca" class="vaca">
+    <img src="./img 2/vacaa.png" alt="Vaca" id="vaca2" class="vaca">
+    <img src="./img 2/vacaaa.png" alt="Vaca" id="vaca3" class="vaca">
+    <img src="./img 2/cerdo.png" alt="Cerdo" id="cerdo" class="cerdo">
+
+    <!-- Gato-Alien -->
+    <img src="./img 2/gatoalien.png" alt="Gato-Alien" id="cat" class="cat">
+
+    <!-- Tablero -->
+    <div class="contador">
+      <div class="item-contador">
+        <img src="./img 2/vaca.png" class="icono" alt="icono vaca">
+        <span id="countVaca">0</span>
+      </div>
+      <div class="item-contador">
+        <img src="./img 2/cerdo.png" class="icono" alt="icono cerdo">
+        <span id="countPig">0</span>
+      </div>
+    </div>
+  </div>
+
 
   <script src="./app.js"></script>
 </body>
