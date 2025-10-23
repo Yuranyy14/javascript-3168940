@@ -47,7 +47,7 @@ body {
   width: 90px;
   position: absolute;
   bottom: 50px;
-  left: 60px;;
+  left: 60px;
 }
 
 #rana {
@@ -183,9 +183,72 @@ body {
   left: 570px;
 }
 
-#ovni, #ovni {
+#ovni {
   width: 90px;
   position: absolute;
   bottom: 50px;
+  left: 60px;
+}
+
+/* --- Clickeables --- */
+.vaca, .cerdo {
+  width: 70px;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* --- gato-alien --- */
+#cat, #cat {
+  width: 160px;
+  position: absolute;
+  bottom: 50px;
   left: 60px;;
+}
+s
+/* Posiciones */
+#vaca { top: 450px; left: 450px; }
+#vaca2 { top: 50px; left: 400px; }
+#vaca3 { top: 150px; left: 340px; }
+
+#cerdo { top: 230px; left: 220px; }
+
+/* --- EScenario 3 --- */
+#polilla {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 80px;
+  left: 140px;
+}
+
+
+#mari {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 30px;
+  left: 570px;
+}
+
+/* --- Clickeables --- */
+.insecto {
+  width: 70px;
+  position: absolute;
+  cursor: pointer;
+}
+
+
+/* Posiciones */
+#insecto1 { top: 400px; left: 10px; }
+#insecto2 { top: 50px; left: 400px; }
+#insecto3 { top: 150px; left: 340px; }
+#insecto4 { top: 230px; left: 220px; }
+
+/* --- Araña --- */
+#spiderm {
+  position: absolute;
+  width: 200px;
+  bottom: 40px;
+  left: 100px;
+  transition: all 1s ease;
 }
