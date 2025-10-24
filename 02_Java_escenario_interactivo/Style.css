@@ -186,8 +186,8 @@ body {
 #ovni {
   width: 90px;
   position: absolute;
-  bottom: 50px;
-  left: 60px;
+  bottom: 300px;
+  left: 100px;
 }
 
 /* --- Clickeables --- */
@@ -201,48 +201,104 @@ body {
 #cat, #cat {
   width: 160px;
   position: absolute;
-  bottom: 50px;
-  left: 60px;;
+  bottom: 300px;
+  left: 300px;;
 }
-s
-/* Posiciones */
-#vaca { top: 450px; left: 450px; }
-#vaca2 { top: 50px; left: 400px; }
-#vaca3 { top: 150px; left: 340px; }
 
-#cerdo { top: 230px; left: 220px; }
+/* Posiciones */
+#vaca { top: 255px; left: 500px; }
+#vaca2 { top: 260px; left: 100px; }
+#vaca3 { top: 400px; left: 340px; }
+
+#cerdo { top: 350px; left: 220px; }
+
+/* animacion */
+.saltar {
+  animation: salto 2s ease forwards;
+}
+
+
+
+@keyframes salto {
+  0% {transform: translateY(0); opacity: 1;}
+  30% {transform: translateY(-60px);}
+  100% {transform: translateY(0); opacity: 0;}
+}
+
+/* mover ovni  */
+
+/* mover nube1*/
+.moverNube {
+  animation: moverNube 10s linear infinite alternate;
+}
+
+@keyframes moverNube {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(900px);
+  }
+}
+
+/* mover nube2  */
+.moverNube2{
+  animation: moverNube2 15s linear infinite alternate;
+}
+
+@keyframes moverNube2 {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+
+.moverOvni{
+  animation: moverOvni 2.5s linear infinite alternate;
+}
+
+@keyframes moverOvni {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+}
 
 /* --- EScenario 3 --- */
 #polilla {
-  width: 80px;
-  height: 80px;
+  width: 200px;
+  height: 200px;
   position: absolute;
-  top: 80px;
-  left: 140px;
+  top: 50px;
+  left: 40px;
 }
 
 
 #mari {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   position: absolute;
-  top: 30px;
+  top: 10px;
   left: 570px;
 }
 
 /* --- Clickeables --- */
-.insecto {
-  width: 70px;
+#insecto {
+  width: 80px;
+  height: 80px;
   position: absolute;
-  cursor: pointer;
 }
 
 
 /* Posiciones */
-#insecto1 { top: 400px; left: 10px; }
-#insecto2 { top: 50px; left: 400px; }
-#insecto3 { top: 150px; left: 340px; }
-#insecto4 { top: 230px; left: 220px; }
+.insecto1 { top: 400px; left: 10px; }
+.insecto2 { top: 50px; left: 400px; }
+.insecto3 { top: 150px; left: 340px; }
+.insecto4 { top: 230px; left: 220px; }
 
 /* --- Araña --- */
 #spiderm {
@@ -252,3 +308,4 @@ s
   left: 100px;
   transition: all 1s ease;
 }
+
