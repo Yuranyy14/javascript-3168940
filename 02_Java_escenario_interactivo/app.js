@@ -1,60 +1,79 @@
-// Escenario 1
+// ---------- ESCENARIO 1: Tiburón ----------
 
-// 1. captura de variables
-const corazon = document.querySelectorAll(".cora")
-const tablero = document.querySelector(".contadorCorazon")
-let counter = 0 
+// 1. Captura de variables
+const corazones = document.querySelectorAll(".cora");
+const peces = document.querySelectorAll(".pez");
+const countCorazon = document.getElementById("countCorazon");
+const countPez = document.getElementById("countPez");
 
-console.log(corazon, tablero)
+let contadorCorazon = 0;
+let contadorPez = 0;
 
-// 2. funciones 
-corazon.forEach( item => {
-    
-    item.addEventListener("click", () => {
-        item.style.filter = "grayscale(1)"
-        item.classList.add("saltar")
-        counter++
-        tablero.textContent = counter
-    })
+// 2. Funciones
+corazones.forEach(item => {
+  item.addEventListener("click", () => {
+    item.style.filter = "grayscale(1)";
+    item.classList.add("saltar");
+    contadorCorazon++;
+    countCorazon.textContent = contadorCorazon;
+  });
+});
 
-    })
-
-
-// 3. Eventos 
-
-
-//Escenario 2
-// 1. captura de variables
-const vaca = document.querySelectorAll(".vaca")
-const cerdo = document.querySelectorAll(".cerdo")
-const tableroVca = document.querySelector(".countVaca")
-const tableroCrdo = document.querySelector(".countPig")
-let counterV = 0 
-
-console.log(vaca, tableroVca, cerdo, tableroCrdo)
-
-// 2. funciones 
-vaca.forEach( item => {
-    
-    item.addEventListener("click", () => {
-        item.style.filter = "grayscale(1)"
-        item.classList.add("saltar")
-        counter++
-        tableroVca.textContent = counter
-    })
-
-    })
-
-    cerdo.forEach( item => {
-    
-    item.addEventListener("click", () => {
-        item.style.filter = "grayscale(1)"
-        item.classList.add("saltar")
-        counter++
-        tableroCrdo.textContent = counter
-    })
-
-    })
+peces.forEach(item => {
+  item.addEventListener("click", () => {
+    item.style.filter = "grayscale(1)";
+    item.classList.add("saltar");
+    contadorPez++;
+    countPez.textContent = contadorPez;
+  });
+});
 
 
-// 3. Eventos 
+// ---------- ESCENARIO 2: Gato-Alien ----------
+
+// 1. Captura de variables
+const vacas = document.querySelectorAll(".vaca");
+const cerdos = document.querySelectorAll(".cerdo");
+const countVaca = document.getElementById("countVaca");
+const countPig = document.getElementById("countPig");
+
+let contadorVaca = 0;
+let contadorCerdo = 0;
+
+// 2. Funciones
+vacas.forEach(item => {
+  item.addEventListener("click", () => {
+    item.style.filter = "grayscale(1)";
+    item.classList.add("saltar");
+    contadorVaca++;
+    countVaca.textContent = contadorVaca;
+  });
+});
+
+cerdos.forEach(item => {
+  item.addEventListener("click", () => {
+    item.style.filter = "grayscale(1)";
+    item.classList.add("saltar");
+    contadorCerdo++;
+    countPig.textContent = contadorCerdo;
+  });
+});
+
+
+// ---------- ESCENARIO 3: Araña ----------
+
+// 1. Captura de variables
+const insectos = document.querySelectorAll(".insecto1, .insecto2, .insecto3, .insecto4");
+const countInsecto = document.getElementById("countInsecto");
+
+let contadorInsecto = 0;
+
+// 2. Funciones
+insectos.forEach(item => {
+  item.addEventListener("click", () => {
+    item.style.filter = "grayscale(1)";
+    item.classList.add("saltar");
+    contadorInsecto++;
+    countInsecto.textContent = contadorInsecto;
+  });
+});
