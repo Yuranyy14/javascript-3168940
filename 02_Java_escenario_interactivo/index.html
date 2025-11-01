@@ -1,133 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Escenario interactivo</title>
-  <link rel="stylesheet" href="./Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escenario interactivo</title>
+    <link rel="stylesheet" href="./Style.css">
 </head>
 <body>
-  <div id="cont-esce">
-
-  <!-- Escenario 1 -->
-   <div class="escenarioActivo" class="esc">
-   <div id="escenario1">
-  <h1 id="titulo">Aventura del Tiburón</h1>
-
-  <div id="escenario">
-    <img src="./img/Fondo.jpg" alt="fondo" id="fnd" class="miniatura">
-
-    <!-- Animables -->
-    <img src="./img/medusa.png" alt="medusa" id="medusa" class="moverMedusa">
-    <img src="./img/gt0.png" alt="Gato" id="gat0" class="moverGat0">
-    <img src="./img/rana.png" alt="rana" id="rana" class="moverRana">
-
-    <!-- Clickeables -->
-    <img src="./img/corazon.png" alt="corazon" id="crz" class="cora">
-    <img src="./img/corazon.png" alt="corazon" id="crz2" class="cora">
-    <img src="./img/corazon.png" alt="corazon" id="crz3" class="cora">
-    <img src="./img/pezz1.PNG" alt="pezz" id="pezz1" class="pez">
-    <img src="./img/pezz1.PNG" alt="pezz" id="pezz2" class="pez">
-    <img src="./img/pezz1.PNG" alt="pezz" id="pezz3" class="pez">
-    <img src="./img/pezz1.PNG" alt="pezz" id="pezz4" class="pez">
-
-    <!-- Tiburon -->
-    <img src="./img/shark.png" alt="Tiburon" id="shark" class="chark">
-
-    <!-- Tablero -->
-    <div class="contador">
-      <div class="item-contador">
-        <img src="./img/corazon.png" class="icono" alt="icono corazón">
-        <span id="countCorazon">0</span>
-      </div>
-      <div class="item-contador">
-        <img src="./img/pezz1.PNG" class="icono" alt="icono pez">
-        <span id="countPez">0</span>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-
-  <!-- Escenario 2 -->
-   <div class="esc">
-  <div id="escenario2">
-   <h1 id="titulo">Aventura del gato-alien</h1>
-
-  <div id="escenario">
-    <img src="./img 2/Fondo cielo .jpg" alt="fondo" id="fnd" class="miniatura">
-
-    <!-- Animables -->
-    <img src="./img 2/nube.png" alt="Nube" id="nube1" class="moverNube">
-    <img src="./img 2/nube.png" alt="Nube" id="nube2" class="moverNube2">
-    <img src="./img 2/ovni.png" alt="ovni" id="ovni" class="moverOvni">
-
-    <!-- Clickeables -->
-    <img src="./img 2/vaca.png" alt="Vaca" id="vaca" class="vaca">
-    <img src="./img 2/vacaa.png" alt="Vaca" id="vaca2" class="vaca">
-    <img src="./img 2/vacaaa.png" alt="Vaca" id="vaca3" class="vaca">
-    <img src="./img 2/cerdo.png" alt="Cerdo" id="cerdo" class="cerdo">
-
-    <!-- Gato-Alien -->
-    <img src="./img 2/gatoalien.png" alt="Gato-Alien" id="cat" class="cat">
-
-    <!-- Tablero -->
-    <div class="contador">
-      <div class="item-contador">
-        <img src="./img 2/vaca.png" class="icono" alt="icono vaca">
-        <span id="countVaca">0</span>
-      </div>
-      <div class="item-contador">
-        <img src="./img 2/cerdo.png" class="icono" alt="icono cerdo">
-        <span id="countPig">0</span>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-  <!-- Escenario 3-->
-   <div class="esc">
-  <div id="escenario3">
-<h1 id="titulo">Aventura en la casa de araña</h1>
-
-  <div id="escenario">
-    <img src="./img 3/fondo 3.jpg" alt="fondo" id="fnd" class="miniatura">
-
-    <!-- Animables -->
-    <img src="./img 3/Polilla.png" alt="Polilla" id="polilla" class="moverPolilla">
-    <img src="./img 3/mari.png" alt="Mariquita" id="mari" class="moverMari">
-
-    <!-- Clickeables -->
-    <img src="./img 3/Insecto.png" alt="Insecto" id="insecto" class="insecto1">
-    <img src="./img 3/Insecto.png" alt="Insecto" id="insecto" class="insecto2">
-    <img src="./img 3/Insecto.png" alt="Insecto" id="insecto" class="insecto3">
-    <img src="./img 3/Insecto.png" alt="Insecto" id="insecto" class="insecto4">
     
+    <div id="cont-esce">
 
-    <!-- Araña -->
-    <img src="./img 3/araña.png" alt="Araña" id="spiderm" class="spiderm">
+      <!--Escenario 1-->
+        <div id="escenario1" class="esc escenarioActivo">
+            <h1 id="titulo">Aventura del Tiburón</h1>
 
-    <!-- Tablero -->
-    <div class="contador">
-      <div class="item-contador">
-        <img src="./img 3/Insecto.png" class="icono" alt="icono vaca">
-        <span id="countInsecto">0</span>
-      </div>
+            <div id="escenario">
+                <img src="./img/Fondo.jpg" alt="fondo" id="fnd" class="miniatura">
+
+                <!--Animables -->
+                <img src="./img/medusa.png" alt="medusa" id="medusa" class="moverMedusa">
+                <img src="./img/gt0.png" alt="Gato" id="gat0" class="moverGat0">
+                <img src="./img/rana.png" alt="rana" id="rana" class="moverRana">
+
+                <!--Clickeables -->
+                <img src="./img/corazon.png" alt="corazon" id="crz" class="cora">
+                <img src="./img/corazon.png" alt="corazon" id="crz2" class="cora">
+                <img src="./img/corazon.png" alt="corazon" id="crz3" class="cora">
+                <img src="./img/pezz1.PNG" alt="pezz" id="pezz1" class="pez">
+                <img src="./img/pezz1.PNG" alt="pezz" id="pezz2" class="pez">
+                <img src="./img/pezz1.PNG" alt="pezz" id="pezz3" class="pez">
+                <img src="./img/pezz1.PNG" alt="pezz" id="pezz4" class="pez">
+
+                <!-- Tiburon -->
+                <img src="./img/shark.png" alt="Tiburon" id="shark" class="chark">
+
+                <!-- Tablero -->
+                <div class="contador">
+                    <div class="item-contador">
+                        <img src="./img/corazon.png" class="icono" alt="icono corazón">
+                        <span id="countCorazon">0</span>
+                    </div>
+                    <div class="item-contador">
+                        <img src="./img/pezz1.PNG" class="icono" alt="icono pez">
+                        <span id="countPez">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Escenario 2 -->
+        <div id="escenario2" class="esc">
+            <h1 id="titulo">Aventura del gato-alien</h1>
+
+            <div id="escenario">
+                <img src="./img 2/Fondo cielo .jpg" alt="fondo" id="fnd" class="miniatura">
+
+                <!-- Animables -->
+                <img src="./img 2/nube.png" alt="Nube" id="nube1" class="moverNube">
+                <img src="./img 2/nube.png" alt="Nube" id="nube2" class="moverNube2">
+                <img src="./img 2/ovni.png" alt="ovni" id="ovni" class="moverOvni">
+
+                <!-- Clickeables -->
+                <img src="./img 2/vaca.png" alt="Vaca" id="vaca" class="vaca">
+                <img src="./img 2/vacaa.png" alt="Vaca" id="vaca2" class="vaca">
+                <img src="./img 2/vacaaa.png" alt="Vaca" id="vaca3" class="vaca">
+                <img src="./img 2/cerdo.png" alt="Cerdo" id="cerdo" class="cerdo">
+
+                 <!-- Gato-Alien -->
+                <img src="./img 2/gatoalien.png" alt="Gato-Alien" id="cat" class="cat">
+
+                 <!-- Tablero -->
+                <div class="contador">
+                    <div class="item-contador">
+                        <img src="./img 2/vaca.png" class="icono" alt="icono vaca">
+                        <span id="countVaca">0</span>
+                    </div>
+                    <div class="item-contador">
+                        <img src="./img 2/cerdo.png" class="icono" alt="icono cerdo">
+                        <span id="countPig">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Escenario 3-->
+        <div id="escenario3" class="esc">
+            <h1 id="titulo">Aventura en la casa de araña</h1>
+
+            <div id="escenario">
+                <img src="./img 3/fondo 3.jpg" alt="fondo" id="fnd" class="miniatura">
+
+                <!-- Animables -->
+                <img src="./img 3/Polilla.png" alt="Polilla" id="polilla" class="moverPolilla">
+                <img src="./img 3/mari.png" alt="Mariquita" id="mari" class="moverMari">
+
+                 <!-- Clickeables --> 
+                <img src="./img 3/Insecto.png" alt="Insecto" id="insecto" class="insecto1">
+                <img src="./img 3/Insecto.png" alt="Insecto" id="insecto" class="insecto2">
+                <img src="./img 3/Insecto.png" alt="Insecto" id="insecto" class="insecto3"> 
+                <img src="./img 3/Insecto.png" alt="Insecto" id="insecto" class="insecto4"> 
+                
+                <!-- Araña -->
+                <img src="./img 3/araña.png" alt="Araña" id="spiderm" class="spiderm">
+
+                <!-- Tablero -->
+                <div class="contador">
+                    <div class="item-contador">
+                        <img src="./img 3/Insecto.png" class="icono" alt="icono insecto">
+                        <span id="countInsecto">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </div>
-  </div>
-  </div>
 
-  </div>
-
-   <!-- Flechas -->
+     <!-- Flechas -->
     <button id="prev">↞</button>
     <button id="next">↠</button>
 
-  
+    <div id="miniaturas-cont">
+        <div class="miniatura-item" data-index="0">
+            <img src="./img/Fondo.jpg" alt="Miniatura Tiburón">
+        </div>
+        <div class="miniatura-item" data-index="1">
+            <img src="./img 2/Fondo cielo .jpg" alt="Miniatura Gato-Alien">
+        </div>
+        <div class="miniatura-item" data-index="2">
+            <img src="./img 3/fondo 3.jpg" alt="Miniatura Araña">
+        </div>
+    </div>
 
-  <script src="./app.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
-    
