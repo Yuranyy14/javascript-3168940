@@ -14,6 +14,7 @@ corazones.forEach(item => {
     item.addEventListener("click", () => {
         item.style.filter = "grayscale(1)";
         item.classList.add("saltar");
+        sonidoCorazon.play();
         contadorCorazon++;
         countCorazon.textContent = contadorCorazon;
     });
@@ -23,6 +24,7 @@ peces.forEach(item => {
     item.addEventListener("click", () => {
         item.style.filter = "grayscale(1)";
         item.classList.add("saltar");
+        sonidoPez.play();
         contadorPez++;
         countPez.textContent = contadorPez;
     });
@@ -45,6 +47,7 @@ vacas.forEach(item => {
     item.addEventListener("click", () => {
         item.style.filter = "grayscale(1)";
         item.classList.add("saltar");
+        sonidoOvni.play();
         contadorVaca++;
         countVaca.textContent = contadorVaca;
     });
@@ -54,6 +57,7 @@ cerdos.forEach(item => {
     item.addEventListener("click", () => {
         item.style.filter = "grayscale(1)";
         item.classList.add("saltar");
+        sonidoOvni.play();
         contadorCerdo++;
         countPig.textContent = contadorCerdo;
     });
@@ -73,6 +77,7 @@ insectos.forEach(item => {
     item.addEventListener("click", () => {
         item.style.filter = "grayscale(1)";
         item.classList.add("saltar");
+        sonidoBicho.play();
         contadorInsecto++;
         countInsecto.textContent = contadorInsecto;
     });
@@ -125,3 +130,9 @@ miniaturas.forEach(miniatura => {
         mostrarEscena(newIndex);
     });
 });
+
+//-----Sonidos -----
+const sonidoCorazon = document.getElementById("sncora")
+const sonidoPez = document.getElementById("snpez")
+const sonidoOvni = document.getElementById("snovni")
+const sonidoBicho = document.getElementById("snbicho")
