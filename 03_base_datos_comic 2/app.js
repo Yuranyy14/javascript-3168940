@@ -27,8 +27,8 @@ if (heroContainer) {
 }
 
 
-if (capitulosCard) {
-    comic.capitulos.forEach(capitulo => {
+
+comic.capitulos.forEach(capitulo => {
         capitulosCard.innerHTML += `
             <div class="card">
                 <img src="./img/${capitulo.portada}" alt="${capitulo.nombre}">
@@ -37,11 +37,11 @@ if (capitulosCard) {
             </div>
         `;
     });
-}
 
 
 
-if (personajesCard) {
+
+
 personajesData.forEach(personaje => {
         const div = document.createElement("div");
         div.classList.add("card");
@@ -54,4 +54,3 @@ personajesData.forEach(personaje => {
         
         personajesCard.appendChild(div);
     });
-}
