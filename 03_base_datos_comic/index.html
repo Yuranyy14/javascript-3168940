@@ -1,94 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Style.css">
-    <title>Base de datos</title>
+    <link rel="stylesheet" href="./Style.css"> 
+    <title>Base de datos: El Centurión de la Noche</title>
 </head>
 <body>
-  <header>
-    <!-- Logo -->
-    <div id="logo" class="logo">
-      <img src="./img/logo.png" alt="Logo">
-    </div>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#capitulos">Capítulos</a>
-      <a href="#personajes">Personajes</a>
-    </nav>
-  </header>
-
-  <!-- Portada -->
-  <div class="hero" id="inicio">
-    <img src="./img/portada.png" alt="Portada del cómic">
-    <div class="hero-info">
-      <h2>El Centurión de la Noche</h2>
-      <div class="meta-info">
-        <span>2025</span> | <span>3 Capítulos</span> | <span>Música/Drama/Biografico</span>
-      </div>
-      <p>Una historia de cómo Joe se convirtió en la leyenda que es hoy en día.</p>
-      <div class="hero-buttons">
-      <button>Ver capítulo 1</button>
-        <a href="#personajes" class="secondary-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-          Más Info
-        </a>
+    <header>
+        <div id="logo" class="logo">
+            <img src="./img/logo.png" alt="Logo">
         </div>
-      </div>
-    </div>
-  </div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#capitulos">Capítulos</a>
+            <a href="#personajes">Personajes</a>
+        </nav>
+    </header>
 
-  <!-- Capitulos -->
-  <div class="capitulos" id="capitulos">
-    <h2>Capítulos</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="./img/cap1.png" alt="Capítulo 1">
-        <h3>El inicio</h3>
-        <p>La niñez de Joe y cómo descubrió las maravillas de su voz.</p>
-      </div>
-      <div class="card">
-        <img src="./img/cap2.png" alt="Capítulo 2">
-        <h3>Cantando contra las cadenas</h3>
-        <p>La increíble voz de Joe rompiendo cadenas y fronteras.</p>
-      </div>
-      <div class="card">
-        <img src="./img/cap3.png" alt="Capítulo 3">
-        <h3>El renacer del centurión</h3>
-        <p>Un triste final para Álvaro José Arroyo González, un renacer para el rey del carnaval.</p>
-      </div>
-    </div>
-  </div>
+    <div class="inicio" id="inicio">
+        </div>
 
-    <!-- Personajes -->
-  <div id="personajes" class="personajes">
-    <h2>Personajes</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="./img/joe.png" alt="Joe Arroyo" id="joe">
-        <h3>Joe Arroyo</h3>
-        <p>El protagonista principal, un cantante con una voz única y magica.</p>
-      </div>
-      <div class="card">
-        <img src="./img/fruko.png" alt="Fruko">
-        <h3>Fruko</h3>
-        <p>El encargado de guiar la carrera musical de Joe y llevarlo al estrellato.</p>
-      </div>
-      <div class="card">
-        <img src="./img/madre.png" alt="Madre de Joe">
-        <h3>Madre de Joe</h3>
-        <p>Una mujer fuerte que apoya a Joe en su camino hacia la fama.</p>
-      </div>
+    <div class="capitulos" id="capitulos">
+        <h2>Capítulos</h2>
+        <div class="card" id="capitulosCard">
+            </div>
     </div>
 
-  <footer class="footer">
-    <p>© 2025 Joseph & Yurany — Producción de Multimedia SENA</p>
-  </footer>
-</body>
-</html>
+    <div id="personajes" class="personajes">
+        <h2>Personajes</h2>
+        <div class="card" id="personajesCard">
+            </div>
+    </div>
 
-    <script src="./app.js"></script>
+    <footer class="footer">
+        <p>© 2025 Joseph & Yurany — Producción de Multimedia SENA</p>
+    </footer>
+
     <script src="./bd.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
