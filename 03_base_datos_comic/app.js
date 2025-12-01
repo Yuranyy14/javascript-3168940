@@ -1,3 +1,4 @@
+import { comic } from "./bd.js";
 
 const heroContainer = document.getElementById("inicio");
 const capitulosCard = document.getElementById("capitulosCard");
@@ -27,30 +28,30 @@ if (heroContainer) {
 }
 
 
-
 comic.capitulos.forEach(capitulo => {
-        capitulosCard.innerHTML += `
+    capitulosCard.innerHTML += `
+        <a href="./">
             <div class="card">
                 <img src="./img/${capitulo.portada}" alt="${capitulo.nombre}">
                 <h3>${capitulo.nombre}</h3>
                 <p>${capitulo.descripcion}</p>
             </div>
-        `;
-    });
+        </a> `;
+});
 
 
 
-
-
-personajesData.forEach(personaje => {
-        const div = document.createElement("div");
-        div.classList.add("card");
-        
-        div.innerHTML = `
-            <img src="${personaje.imagen}" alt="${personaje.nombre}">
-            <h3>${personaje.nombre}</h3>
-            <p>${personaje.descripcion}</p>
-        `;
-        
-        personajesCard.appendChild(div);
-    });
+comic.personajes.forEach(char => {
+    const div = document.createElement("div");
+    div.classList.add("card");
+    
+    div.innerHTML = `
+        <a href="./indexper.html?id=${char.id}">
+            <img src="${char.imagen}" alt="${char.nombre}">
+            <h3>${char.nombre}</h3>
+            <p>${char.descripcion}</p>
+        </a>
+    `;
+    
+    personajesCard.appendChild(div);
+});

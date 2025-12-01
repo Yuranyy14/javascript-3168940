@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Capítulos – SonArte</title>
+  <link rel="stylesheet" href="./Style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div id="logo" class="logo">
+      <img src="./img/logo.png" alt="Logo SonArte" style="height:50px;">
+    </div>
+
+    <nav>
+      <a href="./index.html">Inicio</a>
+      <a href="./capitulos.html">Capítulos</a>
+      <a href="./personajes.html">Personajes</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="stage">
+    <section class="frame" role="region">
+
+      <!-- PANEL IZQUIERDO → VIDEO -->
+      <aside class="panel left" id="videoPanel" aria-hidden="true">
+        <button class="close-btn" id="closeVideo">✕</button>
+        <div class="title">Trailer del capítulo</div>
+
+        <div>
+          <video 
+            id="videoBox" 
+            class="video-box"
+            src="./videos/cap1.mp4"
+            controls
+            preload="metadata">
+          </video>
+
+          <div class="play-circle" id="playBtn">▶</div>
+        </div>
+
+        <p style="font-size:13px;color:rgba(0,0,0,0.6)">
+          Vista previa del capítulo seleccionado.
+        </p>
+      </aside>
+
+
+      <!-- CENTRO → LISTA DE CAPÍTULOS -->
+      <div class="center">
+        <div class="card-character" id="chapterCard" tabindex="0" role="button" aria-pressed="false">
+          
+          <img src="./img/cap1.png" alt="Capítulo 1" class="character-svg">
+
+          <div style="text-align:center">
+            <div style="font-weight:700">Capítulo 1<br>El Ritmo Despierta</div>
+            <div class="hint">(clic para ver más)</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- PANEL DERECHO → INFO DEL CAPÍTULO -->
+      <aside class="panel right" id="infoPanel" aria-hidden="true">
+        <button class="close-btn" id="closeInfo">✕</button>
+        <div class="title">Capítulo 1 — El Ritmo Despierta</div>
+
+        <div style="display:flex;flex-direction:column;gap:8px;margin-top:6px">
+
+          <div class="info-line"></div>
+          <div class="info-line short"></div>
+          <div class="info-line"></div>
+
+          <p style="font-size:13px;color:rgba(0,0,0,0.7);line-height:1.45;margin-top:8px">
+            En este capítulo, acompañamos a Joe en uno de los momentos más 
+            importantes de su niñez. Un encuentro inesperado con la música moverá 
+            su mundo, despertando el ritmo que más adelante marcará a todo un país.
+            <br><br>
+            Este episodio introduce los conflictos, el entorno y el origen emocional 
+            de nuestra historia.
+          </p>
+
+        </div>
+      </aside>
+
+    </section>
+  </main>
+ <script type="module" src="./capitulos.js"></script>
+</body>
+</html>

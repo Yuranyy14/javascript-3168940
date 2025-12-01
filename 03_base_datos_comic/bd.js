@@ -1,4 +1,4 @@
-const comic = {
+export let comic = {
     "nombreComic": "El Centurión de la Noche",
     "numeroCapitulos": 3,
     "genero": ["Música", "Drama", "Biográfico", "Fantasía"], 
@@ -25,24 +25,25 @@ const comic = {
             "portada": "cap3.png",
             "descripcion": "Un triste final para Álvaro José Arroyo González, un renacer para el rey del carnaval."
         }
+    ],
+    "personajes": [  
+        {
+            "id" : 1,
+            "nombre": "Joe Arroyo",
+            "imagen": "./img/joe.png", 
+            "descripcion": "El protagonista principal, un cantante con una voz única y mágica."
+        },
+        {
+            "id" : 2,
+            "nombre": "Fruko",
+            "imagen": "./img/fruko.png",
+            "descripcion": "El encargado de guiar la carrera musical de Joe y llevarlo al estrellato."
+        },
+        {
+            "id" : 3,
+            "nombre": "Madre de Joe",
+            "imagen": "./img/madre.png",
+            "descripcion": "Una mujer fuerte que apoya a Joe en su camino hacia la fama."
+        }
     ]
 };
-
-
-const personajesData = [
-    {
-        "nombre": "Joe Arroyo",
-        "imagen": "./img/joe.png", 
-        "descripcion": "El protagonista principal, un cantante con una voz única y mágica."
-    },
-    {
-        "nombre": "Fruko",
-        "imagen": "./img/fruko.png",
-        "descripcion": "El encargado de guiar la carrera musical de Joe y llevarlo al estrellato."
-    },
-    {
-        "nombre": "Madre de Joe",
-        "imagen": "./img/madre.png",
-        "descripcion": "Una mujer fuerte que apoya a Joe en su camino hacia la fama."
-    }
-];
