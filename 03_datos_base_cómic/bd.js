@@ -1,0 +1,73 @@
+    export let comic = {
+    "nombreComic": "El Centurión de la Noche",
+    "numeroCapitulos": 3,
+    "genero": ["Música", "Drama", "Biográfico", "Fantasía"], 
+    "sinopsis": "Una historia de cómo Joe se convirtió en la leyenda que es hoy en día.",
+    "autores": ["Joseph", "Yurany"],
+    "portadaComic": "portada.png", 
+    "year": 2025,
+    "capitulos": [
+        {
+            "id": 1,
+            "nombre": "El inicio",
+            "portada": "cap1.png",
+            "descripcion": "La niñez de Joe y cómo descubrió las maravillas de su voz."
+        },
+        {
+            "id": 2,
+            "nombre": "Cantando contra las cadenas",
+            "portada": "cap2.png",
+            "descripcion": "La increíble voz de Joe rompiendo cadenas y fronteras."
+        },
+        {
+            "id": 3,
+            "nombre": "El renacer del centurión",
+            "portada": "cap3.png",
+            "descripcion": "Un triste final para Álvaro José Arroyo González, un renacer para el rey del carnaval."
+        }
+    ],
+    "personajes": [  
+        {
+            "id" : 1,
+            "nombre": "Joe Arroyo",
+            "imagen": "./img/joe.png", 
+            "descripcion": "El protagonista principal, un cantante con una voz única y mágica."
+        },
+        {
+            "id" : 2,
+            "nombre": "El Centurion",
+            "imagen": "./img/centurion.png",
+            "descripcion": "La sombra de la increible voz de Joe."
+        },
+        {
+            "id" : 3,
+            "nombre": "Doña Angela",
+            "imagen": "./img/doñaangela.png",
+            "descripcion": "Una mujer fuerte que apoya a Joe en su camino hacia la fama."
+        },
+        {
+            "id" : 4,
+            "nombre": " Rubén Darío",
+            "imagen": "./img/ruben.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id" : 5,
+            "nombre": "Manuel Villanueva",
+            "imagen": "./img/manuel.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id" : 6,
+            "nombre": "Fruko",
+            "imagen": "./img/fruko.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },        
+        {
+            "id" : 7,
+            "nombre": "Tía Ayda",
+            "imagen": "./img/tiaayda.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    ]
+}
