@@ -7,6 +7,12 @@
     "autores": ["Joseph", "Yurany"],
     "portadaComic": "portada.png",
     "year": 2025,
+    
+    "imagenesCarrusel": [
+ "./img/portada.png", 
+ "./img/carruzel2.png", 
+ "./img/carruzel3.png",
+],
 
     "capitulos": [
         {

@@ -1,9 +1,9 @@
 /*Pag principal*/
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color:  linear-gradient(180deg, #FFFDE8 0%, #F9EED2 100%);;
-  color: #fff;
+ margin: 0;
+ font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+ background: linear-gradient(180deg, #FFFDE8 0%, #F9EED2 100%);
+ color: #552714
 }
 
 
@@ -16,6 +16,15 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: none;
+}
+
+.stage + header {
+ background: transparent;
+ border-bottom: 1px solid #552714;
+}
+.stage + header nav a {
+ color: #552714;
 }
 
 #logo img {
@@ -86,25 +95,17 @@ nav a:hover {
   margin-right: 8px; 
 }
 
-.inicio {
-  position: relative;
-  text-align: left;
-  margin-top: 10px;
-}
-
-.inicio img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  opacity: 0.7;
-}
 
 .hero-info {
-  position: absolute;
-  bottom: -100px;
-  left: 40px;
-  right: 40px;
-  max-width: 500px;
+ position: absolute;
+ bottom: 40px; 
+ left: 40px;
+ right: 40px;
+ max-width: 500px;
+ z-index: 5; 
+ background: rgba(0, 0, 0, 0.5); 
+ padding: 20px;
+ border-radius: 10px;
 }
 
 .hero-info h2 {
@@ -232,26 +233,6 @@ footer {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  background: linear-gradient(180deg, #FFFDE8 0%, #F9EED2 100%);
-  color: #552714;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-
-header {
-  padding: 18px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #552714;
-  background: transparent;
-}
-
 header nav a {
   margin-left: 16px;
   text-decoration: none;
@@ -270,14 +251,16 @@ header nav a {
 }
 
 .frame {
-    width: min(1200px, 94%);
-    height: 520px;
-    background: #552714;
-    border-radius: 12px;
-    display: flex; 
-    overflow: hidden;
-    box-shadow: 0 5px 50px #5527144a;
+ width: min(1200px, 94%);
+ height: 520px;
+ background: #552714;
+ border-radius: 12px;
+ display: flex; 
+ overflow: hidden;
+ box-shadow: 0 5px 50px #5527144a;
+ margin: 20px auto;
 }
+
 
 
 .panel {
@@ -293,20 +276,6 @@ header nav a {
   gap: 12px;
 }
 
-.panel.right {
-  border-left: none;
-  border-right: 1px dashed rgba(0, 0, 0, 0.1);
-  transform: translateX(100%);
-}
-
-.panel.open.left {
-  transform: translateX(0);
-}
-
-.panel.open.right {
-  transform: translateX(0);
-}
-
 .personaje-card-container {
     flex-basis: 500%;
     max-width: 300px; 
@@ -316,10 +285,10 @@ header nav a {
 }
 
 .center {
-    flex: 1;
-    padding: 30px; 
-    background: linear-gradient(180deg, #fffde8, #fff5d6); 
-    overflow-y: auto; 
+   flex: 1;
+   padding: 30px; 
+   background: linear-gradient(180deg, #fffde8, #fff5d6); 
+   overflow-y: auto;
 }
 
 .card-personaje {
@@ -410,14 +379,6 @@ header nav a {
   margin-top: 10px;
 }
 
-.personajes-list {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-    gap: 20px;
-    justify-content: center;
-}
-
 .personaje-detail-view {
     display: flex;
     gap: 30px;
@@ -444,7 +405,7 @@ header nav a {
     padding: 20px;
     border-radius: 10px;
     background: #552714;
-    color: #fffde8;
+    color: #000000;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -481,106 +442,131 @@ header nav a {
 }
 
 
-@media (max-width: 768px) {
-    .capitulo-detail-view {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .capitulo-card-container {
-        flex-basis: auto;
-        max-width: 90%; 
-        width: 90%;
-    }
-    
-    .capitulo-info-static {
-        width: 100%;
-        padding: 0 10px;
-        margin-top: 20px;
-    }
-}
-
 /*Carrusel */
 
 .carrusel-countainer {
-    width: 100%;
-    overflow: hidden; 
-    position: relative;
-    max-height: 500px;
-    display: flex;
-    gap: 15px; 
+  width: 100%;
+  overflow: hidden; 
+  position: relative;
+  height: 500px; 
 }
 
 .carrusel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out; 
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
 }
 
 .carrusel-item {
-    min-width: 100%; 
-    box-sizing: border-box;
+  min-width: 100%; 
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.carrusel-item img {
+  width: 1550px;
+  height: 500px;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+ opacity: 0;
+ transform: translateY(50px);
+ transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Clases para activar la animación */
+.fade-in.visible {
+ opacity: 1;
+ transform: translateY(0);
+}
+
+/* Animación aplicada a los elementos en las páginas de detalle */
+.capitulo-detail-view.visible,
+.personaje-detail-view.visible {
+ animation: slideInUp 0.8s ease-out forwards;
 }
 
 
+/* --- REQUISITO: Animación flotante en tarjetas (float) --- */
+@keyframes float {
+ 0% { transform: translateY(0px); }
+ 50% { transform: translateY(-5px); }
+ 100% { transform: translateY(0px); }
+}
 
+.float-card {
+ /* Elimina la transición 'transform' ya que se usa la animación */
+ text-decoration: none; 
+ display: block; 
+}
 
-@media (max-width: 900px) {
-  .frame {
-    flex-direction: column;
-    height: auto;
-  }
+.float-card:hover .card {
+ animation: float 1.5s ease-in-out infinite; 
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
 
+.card:hover {
+ /* Se mantiene box-shadow pero se elimina el transform: translateY(-5px) */
+ transform: none; 
+}
 
-  .panel {
-    width: 100%;
-    border: none;
-    transform: translateY(-110%);
-  }
-
-  .panel.right {
-    transform: translateY(110%);
-    border: none;
-  }
-
-  .panel.open {
-    transform: translateY(0);
-  }
-
-  .card-character {
-    width: 85%;
-    height: 380px;
-  }
-  .center {
-        min-height: 400px; 
-    }
-  .personajes-list {
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); 
-    }
+@media (max-width: 768px) {
+ /* Ajuste responsive de index.html */
+ .hero-info {
+ bottom: 10px;
+ left: 20px;
+ right: 20px;
+ padding: 10px;
+ }
+.capitulos, .personajes {
+ padding: 40px 20px;
+ }
+ 
+ /* Ajuste responsive de paginas de detalle */
+ .frame {
+ flex-direction: column;
+ height: auto;
+ }
+ /* ... Tu código existente para media query 768px ... */
 }
 
 
 @media (max-width: 500px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-    gap: 12px;
-  }
+ /* ... Tu código existente para media query 500px ... */
 
-  header nav a {
-    margin: 0 8px;
-  }
+ /* Ajuste responsive de header para evitar problemas de diagramación */
+ header {
+ flex-direction: column;
+ text-align: center;
+ gap: 12px;
+ }
+ header nav a {
+ margin: 0 8px;
+ }
+ 
+ .card h3 {
+ font-size: 1em;
+ }
 
-  .card-character {
-    width: 90%;
-    height: 350px;
-  }
-
-  .character-svg {
-    width: 220px;
-    height: 260px;
-  }
-
-  .info-line {
-    height: 10px;
-  }
+ .card p {
+ font-size: 0.8em;
+ }
 }
+
+
+
+
