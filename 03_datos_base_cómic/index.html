@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="./style.css"> 
- <title>Base de datos: El Centurión de la Noche</title>
+    <meta charset="UTF-8">
+    <title>Boton</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            text-align: center;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        a {
+            text-decoration: none;
+            color: #552714;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: 2px solid #552714;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a:hover {
+            background-color: #552714;
+            color: white;
+        }
+    </style>
 </head>
 <body>
- <header>
- <div id="logo" class="logo">
- <img src="./img/logo.png" alt="Logo">
- </div>
- <nav>
- <a href="#inicio">Inicio</a>
- <a href="#capitulos">Capítulos</a> 
- <a href="#personajes">Personajes</a>
- </nav>
- </header>
 
- <div class="carrusel-container" id="inicio">
- <div class="carrusel-inner" id="carruselInner">
- </div>
- <div class="hero-info" id="heroInfo">
- </div>
- </div>
+    <a class=".container" href="./pagina/index.html">
+        Click para entrar a la pagina
+    </a>
 
- <div class="capitulos fade-in" id="capitulos">  <h2>Capítulos</h2>
- <div class="cards-container" id="capitulosCard"></div>
- </div>
-
- <div id="personajes" class="personajes fade-in">  <h2>Personajes</h2>
- <div class="cards-container" id="personajesCard"></div>
- </div>
-
- <footer class="footer">
- <p>© 2025 Joseph & Yurany — Producción de Multimedia SENA</p>
- </footer>
-
- <script src="./app.js" type="module"></script>
 </body>
 </html>
