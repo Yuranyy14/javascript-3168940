@@ -438,9 +438,23 @@ header nav a {
 
 .capitulo-info-static p {
     color: #552714;
-    font-size: 14px;
+    font-size: 20px;
 }
 
+.contenedorVideo {
+margin: 20px auto;
+border: 10px solid #A0522D;
+border-radius: 10px;
+width: 659px;
+}
+.contenedorVideo iframe,
+.contenedorVideo video {
+  display: block;
+}
+.contenedorVideo h2 {
+  text-align: center;
+  
+}
 
 /*Carrusel */
 
@@ -485,7 +499,7 @@ header nav a {
 .fade-in {
  opacity: 0;
  transform: translateY(50px);
- transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+ transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 /* Clases para activar la animación */
@@ -501,7 +515,7 @@ header nav a {
 }
 
 
-/* --- REQUISITO: Animación flotante en tarjetas (float) --- */
+/* --Animación flotante en tarjetas --- */
 @keyframes float {
  0% { transform: translateY(0px); }
  50% { transform: translateY(-5px); }
@@ -509,7 +523,6 @@ header nav a {
 }
 
 .float-card {
- /* Elimina la transición 'transform' ya que se usa la animación */
  text-decoration: none; 
  display: block; 
 }
@@ -520,12 +533,10 @@ header nav a {
 }
 
 .card:hover {
- /* Se mantiene box-shadow pero se elimina el transform: translateY(-5px) */
  transform: none; 
 }
 
 @media (max-width: 768px) {
- /* Ajuste responsive de index.html */
  .hero-info {
  bottom: 10px;
  left: 20px;
@@ -536,19 +547,17 @@ header nav a {
  padding: 40px 20px;
  }
  
- /* Ajuste responsive de paginas de detalle */
+
  .frame {
  flex-direction: column;
  height: auto;
  }
- /* ... Tu código existente para media query 768px ... */
+
 }
 
 
 @media (max-width: 500px) {
- /* ... Tu código existente para media query 500px ... */
 
- /* Ajuste responsive de header para evitar problemas de diagramación */
  header {
  flex-direction: column;
  text-align: center;

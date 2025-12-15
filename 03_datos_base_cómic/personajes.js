@@ -13,7 +13,7 @@ const containerPersonaje = document.querySelector('.contenido-personaje');
 
 if (miPersonaje) {
  const personajeHTML = ` 
- <div class="personaje-detail-view fade-in visible"> <div class="personaje-card-container">
+<div class="personaje-detail-view fade-in visible"> <div class="personaje-card-container">
  <div class="card-personaje active-view" data-personaje-id="${miPersonaje.id}">
  <img src="${miPersonaje.imagen}" alt="${miPersonaje.nombre}" class="personaje-img">
  <div class="personaje-nombre">${miPersonaje.nombre}</div>

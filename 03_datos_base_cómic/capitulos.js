@@ -12,7 +12,7 @@ const containerCapitulos = document.querySelector('.contenido-capitulo');
 
 if (miCapitulo) {
     const capituloHTML = `
-        <div class="capitulo-detail-view fade-in visible">  <div class="capitulo-card-container">
+   <div class="capitulo-detail-view fade-in visible">  <div class="capitulo-card-container">
  <div class="card-capitulo active-view" data-capitulo-id="${miCapitulo.id}">
  <img src="${miCapitulo.portada}" alt="Imagen del Capítulo ${miCapitulo.id}" class="capitulo-img">
  <div class="capitulo-nombre">${miCapitulo.nombre}</div> 
@@ -31,6 +31,12 @@ if (miCapitulo) {
  </div>
  </div>
  </div>
+
+   <div class="contenedorVideo" >
+   <h2>Video</h2>
+ <video width="640" height="360" controls>
+  <source src="${miCapitulo.video}" type="video/mp4">
+  </div>
  `;
  containerCapitulos.innerHTML = capituloHTML;
 }

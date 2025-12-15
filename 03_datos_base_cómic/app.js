@@ -6,7 +6,7 @@ const heroInfo = document.getElementById("heroInfo");
 const capitulosCard = document.getElementById("capitulosCard");
 const personajesCard = document.getElementById("personajesCard");
 
-// CARRUSEL DE IMÁGENES
+// carrusel de imagenes
 
 if (heroContainer && carruselInner && heroInfo) {
     comic.imagenesCarrusel.forEach(imagen => {
@@ -33,7 +33,7 @@ if (heroContainer && carruselInner && heroInfo) {
         </div>
     `;
 
-    // carrusel (cambio)
+    // carrusel cambio 
     let currentIndex = 0;
     const items = document.querySelectorAll('.carrusel-item');
     const totalItems = items.length;

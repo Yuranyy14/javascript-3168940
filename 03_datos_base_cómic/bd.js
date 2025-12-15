@@ -19,19 +19,22 @@
             "id": 1,
             "nombre": "El inicio",
             "portada": "./img/cap1.png",
-            "descripcion": "La niñez de Joe y cómo descubrió las maravillas de su voz."
+            "descripcion": "La niñez de Joe y cómo descubrió las maravillas de su voz.",
+            "video": "./vid/video.mp4"
         },
         {
             "id": 2,
             "nombre": "Cantando contra las cadenas",
             "portada": "./img/cap2.png",
-            "descripcion": "La increíble voz de Joe rompiendo cadenas y fronteras."
+            "descripcion": "La increíble voz de Joe rompiendo cadenas y fronteras.",
+            "video": "./vid/video2.mp4"
         },
         {
             "id": 3,
             "nombre": "El renacer del centurión",
             "portada": "./img/cap3.png",
-            "descripcion": "Un triste final para Álvaro José Arroyo González, un renacer para el rey del carnaval."
+            "descripcion": "Un triste final para Álvaro José Arroyo González, un renacer para el rey del carnaval.",
+            "video": "./vid/video3.mp4"
         }
     ],
 
